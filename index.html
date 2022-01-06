@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>Code Editor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1><u>Welcome to Ansh Sharma's Online Code Editor</u></h1>
+    <textarea id="html" placeholder="HTML" style="color:white"></textarea>
+    <textarea id="css" placeholder="CSS" style="color: white;"></textarea>
+    <textarea id="js" placeholder="JavaScript" style="color: white;"></textarea>
+    <button onclick="compile()">Run Code</button>
+    <button onclick="saveHTML()">Save HTML</button>
+    <button onclick="saveCSS()">Save CSS</button>
+    <button onclick="saveJS()">Save JS</button>
+    <h1>Output Window here:</h1>
+    <iframe id="code"></iframe>
+
+
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>
