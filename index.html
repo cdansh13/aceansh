@@ -1,24 +1,35 @@
 <html>
-  <head>
+
+<head>
     <title>Code Editor</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <link rel="stylesheet" href="style.css" />
-  </head>
+</head>
 
-  <body>
-    <h1><u>Welcome to Ansh Sharma's Online Code Editor</u></h1>
+<body>
+    <h1 class="title" >Welcome to RozCode: Online Code Editor</u></h1>
+    <div class="container" style="background-color: red; height: 10vh; padding-top: 20px; width: 100%;">
+        <button onclick="compile()" style="left: 50px;position: absolute;padding-top: 5px; background-color:green; color: white; height:8vh;width: 12vw; font-size: 15px;">Run Code</button>
+        <button onclick="saveHTML()" style="left: 200px;position: absolute;padding-top: 5px; background-color:green; color: white; height:8vh;width: 12vw; font-size: 15px;">Save HTML</button>
+        <button onclick="saveCSS()" style="left: 350px;position: absolute;padding-top: 5px; background-color:green; color: white; height:8vh;width: 12vw; font-size: 15px;">Save CSS</button>
+        <button onclick="saveJS()" style="left: 500px;position: absolute;padding-top: 5px; background-color:green; color: white; height:8vh;width: 12vw; font-size: 15px;">Save JS</button>
+        <h1 style="position: absolute; top: 60; right: 20px; font-size:28px; padding-top: 10px; color: white;"><u>RozCode: The online Code Environment</u></h1>
+    </div>
     <textarea id="html" placeholder="HTML" style="color:white"></textarea>
     <textarea id="css" placeholder="CSS" style="color: white;"></textarea>
     <textarea id="js" placeholder="JavaScript" style="color: white;"></textarea>
-    <button onclick="compile()">Run Code</button>
-    <button onclick="saveHTML()">Save HTML</button>
-    <button onclick="saveCSS()">Save CSS</button>
-    <button onclick="saveJS()">Save JS</button>
+
+    <button id="show" onclick="ShowBtn()">Show Control Buttons</button>
+    <button id="btn1" onclick="compile()" style="display:none;">Run Code</button>
+    <button id="btn2" onclick="saveHTML()" style="display:none;">Save HTML</button>
+    <button id="btn3" onclick="saveCSS()" style="display:none;">Save CSS</button>
+    <button id="btn4" onclick="saveJS()" style="display:none;">Save JS</button>
     <h1>Output Window here:</h1>
     <iframe id="code"></iframe>
 
 
     <script type="text/javascript" src="index.js"></script>
-  </body>
+</body>
+
 </html>
